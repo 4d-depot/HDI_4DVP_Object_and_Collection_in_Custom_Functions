@@ -1,0 +1,210 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 1027,
+					"height": 856,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"ViewProArea": {
+					"type": "view",
+					"left": 55,
+					"top": 226,
+					"width": 961,
+					"height": 616,
+					"userInterface": "none",
+					"withFormulaBar": true,
+					"events": [
+						"onVPReady"
+					],
+					"method": "ObjectMethods/ViewProArea.4dm",
+					"dataSource": "Form:C1466.VP"
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 853,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"ShowValues": {
+					"type": "button",
+					"top": 195,
+					"left": 54,
+					"width": 165,
+					"height": 25,
+					"text": "Show values",
+					"focusable": false,
+					"method": "ObjectMethods/ShowValues.4dm",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"ShowFormulas": {
+					"type": "button",
+					"top": 195,
+					"left": 216,
+					"width": 165,
+					"height": 25,
+					"text": "Show formulas",
+					"focusable": false,
+					"method": "ObjectMethods/ShowFormulas.4dm",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 966,
+					"height": 720,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 57,
+					"left": 54,
+					"width": 964,
+					"height": 128,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"text": "Next >>",
+					"top": 195,
+					"left": 894,
+					"width": 124,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "<< Previous",
+					"top": 195,
+					"left": 773,
+					"width": 124,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"information2": {
+					"type": "input",
+					"top": 57,
+					"left": 54,
+					"width": 964,
+					"height": 128,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 648,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
