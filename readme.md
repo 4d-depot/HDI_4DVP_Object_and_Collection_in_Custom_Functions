@@ -1,6 +1,6 @@
 # HDI_4DVP_Object_and_Collection_in_Custom_Functions
 
-Use custom functions with collection or object parameters in 4D View Pro](https://us.4d.com/4d-view-pro) documents (4D 20 R5)
+Use custom functions with collection or object parameters in [4D View Pro](https://us.4d.com/4d-view-pro) documents (4D 20 R5)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
